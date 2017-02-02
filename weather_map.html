@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Weather Map</title>
+        <link rel="stylesheet" href="css/bootstrap-3.3.7-dist/css/bootstrap.css">
+        <link rel="stylesheet" href="css/bootstrap-3.3.7-dist/css/bootstrap-theme.css">
+        <link rel="stylesheet" href="css/weather_map.css">
+    </head>
+    <body>
+        <div id="mainContainer">
+            <div id="forecastFlexBox" class="vertContainer">
+                <div class="horizContainer"><h1>Tell me the weather at...</h1></div>
+                <div id="searchBar" class="horizContainer">
+                    <input id="userLocation" class="form-control" type="text" placeholder="Please enter the location and days of forecast">
+                    <input id="days" class="form-control" type="text" value="3">
+                    <button id="search" class="btn btn-primary">Search</button>
+                </div>
+                <div id="location" class="horizContainer"></div>
+                <div id="weather" class="wrapHorizContainer center"></div>
+            </div>
+            <div id="mapFlexBox" class="vertContainer">
+                <div id="map-canvas" class="horizContainer"></div>
+            </div>
+        </div>
+        <script src="js/moment.js"></script>
+        <script src="js/jquery-2.2.4.js"></script>
+        <script src="css/bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD8M1QXQxpkLXWJiS0WqEixJKdli_z2HtA&libraries=places"></script>
+        <script src="js/weather_map.js"></script>
+    </body>
+</html>

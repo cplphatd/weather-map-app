@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css?family=Fredericka+the+Great');
+body {
+    background-image: url("../img/weather.png");
+    color: #474850;
+    font-family: 'Fredericka the Great', cursive;
+}
+.box {
+    height: 20em;
+    width: 20em;
+    border: solid;
+    border-color: black;
+    border-width: 1px;
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-bottom: 1em;
+    display: inline-block;
+    background-color: #D8D5DB;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+.center {
+    text-align: center;
+}
+.cloudy {
+    background-image: url("../img/cloudy.gif");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.extreme {
+    background-color: red;
+}
+.horizContainer {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+.rainy {
+    background-image: url("../img/rainy.gif");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.snowy {
+    background-image: url("../img/snow.gif");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.sunny {
+    background-image: url("../img/sunny.gif");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.stormy {
+    background-image: url("../img/thunderstorm.gif");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.vertContainer {
+    display: flex;
+    flex-flow: column nowrap;
+}
+.wrapHorizContainer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+#days {
+    margin-left: 1em;
+    margin-right: 1em;
+    width: 5em;
+}
+#forecastFlexBox {
+    flex: 2 auto;
+}
+#location {
+    text-decoration: underline;
+}
+#mainContainer {
+    display: flex;
+    flex-flow: row nowrap;
+}
+#map-canvas {
+    width: 30em;
+    height: 42em;
+}
+#mapFlexBox {
+    flex: 1 auto;
+    justify-content: flex-start;
+}
+#userLocation {
+    width: 40em;
+}
+#location {
+    margin-top: 3em;
+}
