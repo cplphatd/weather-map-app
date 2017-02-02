@@ -33,7 +33,7 @@
     //Sends ajax .get request and returns object of info
     var getWeatherInfo = function () {
         return $.get("http://api.openweathermap.org/data/2.5/forecast/daily", {
-            APPID: "e8f4c94a52cb7419ca9257f022da00fc",
+            APPID: "//insert API key here:  http://openweathermap.org/api",
             lat: userLat,
             lon: userLng,
             units: "imperial",
